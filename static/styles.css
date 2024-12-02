@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #847f8b;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(225, 154, 40);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(218, 213, 213, 0.1);
+}
+.header {
+    text-align: center;
+    padding: 20px;
+}
+.header h1 {
+    color: #333;
+    font-size: 36px;
+    margin: 0;
+}
+.header p {
+    color: #be2020;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.form-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 20px;
+}
+form input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #e110ef;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+form input[type="text"]:focus {
+    border-color: #e0e014;
+}
+form button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #1cce57;
+    color: rgb(241, 233, 233);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e50f0f;
+}
+.shortened-url {
+    margin-top: 40px;
+    text-align: center;
+}
+.shortened-url a {
+    color: #25b922;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.shortened-url a:hover {
+    text-decoration: underline;
+}
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e42dc8;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .header h1 {
+        font-size: 30px;
+    }
+    .form-container {
+        margin-top: 20px;
+    }
+    form input[type="text"] {
+        font-size: 14px;
+    }
+    form button {
+        font-size: 14px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
